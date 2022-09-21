@@ -1,32 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;700&display=swap');
+
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #E5E5E5;
 }
 
 #intro {
   width: 100%;
   height: 100vh;
-  background-image: url(images/header.png);
-  background-position: 100%;
-  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 /* header */
 #header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.container a {
+#headline a {
   text-transform: uppercase;
   font-size: 16px;
   text-decoration: none;
   color: #7f8cff;
+  width: 80%;
 }
 
 #logo a {
@@ -35,11 +44,12 @@
   color: #6070ff;
 }
 
-.container ul {
+#headline ul {
   display: flex;
   gap: 10px;
   list-style-type: none;
   padding: 0;
+  width: 80%;
 }
 
 #navbar ul {
@@ -53,6 +63,22 @@
   text-decoration: none;
   color: #344563;
   font-size: 15px;
+  font-weight: 500;
+}
+
+#headline {
+  background-image: url(images/header.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 150px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
 }
 
 .content-padding {
@@ -66,30 +92,28 @@
 
 /* content */
 
-.container {
-  width: 80%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin: 0 auto;
-  gap: 10px;
-}
-
-.container h1 {
+#headline h1 {
   font-size: 48px;
   font-weight: 700;
-  max-width: 400px;
-  align-self: flex-start;
+  font-style: normal;
+  max-width: 80%;
+  width: 80%;
+  line-height: 60px;
+  letter-spacing: 0.37px;
 }
 
-.container p {
+#headline p {
   font-size: 20px;
   font-weight: 400;
+  max-width: 80%;
+  width: 80%;
 }
 
 @media all and (max-width: 768px) {
+  #headline {
+    background-image: url(images/header-mobile.png);
+  }
+
   #navbar ul {
     display: none;
   }
@@ -98,15 +122,11 @@
     display: block;
   }
 
-  #header {
-    justify-content: space-around;
-  }
-
-  .container h1 {
+  #headline h1 {
     font-size: 40px;
   }
 
-  .container p {
+  #headline p {
     font-size: 16px;
   }
 }
