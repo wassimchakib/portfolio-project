@@ -109,6 +109,7 @@ body {
   .presentation {
     background-image: url(images/header-mobile.png);
   }
+
   .skill-set ul {
     display: flex;
     flex-flow: column;
@@ -243,7 +244,6 @@ body {
     display: flex;
     flex-flow: column wrap;
   }
-
 
   .skill-set ul li {
     display: flex;
