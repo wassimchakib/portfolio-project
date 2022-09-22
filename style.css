@@ -20,7 +20,6 @@ body {
   right: 0;
   width: 80%;
   margin: 0 auto;
-
 }
 
 .presentation a {
@@ -110,6 +109,11 @@ body {
   .presentation {
     background-image: url(images/header-mobile.png);
   }
+  .skill-set ul {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
 
   #navbar ul {
     display: none;
@@ -131,7 +135,6 @@ body {
     position: relative;
     background-color: #fff;
     width: 100%;
-
   }
 
   /* Works section */
@@ -163,7 +166,6 @@ body {
     gap: 10px;
     margin-bottom: 10px;
   }
-
 
   .left-block h1 {
     font-size: 32px;
@@ -219,7 +221,7 @@ body {
   /* About myself section  */
   #about-myself {
     background: #fff;
-    border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0;
     border-top-right-radius: 100px;
     height: auto;
   }
@@ -242,11 +244,6 @@ body {
     flex-flow: column wrap;
   }
 
-  .skill-set ul {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-  }
 
   .skill-set ul li {
     display: flex;
@@ -261,7 +258,6 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 72px;
-
   }
 
   .border-bot {
@@ -286,7 +282,6 @@ body {
     font-weight: 500;
     font-size: 15px;
   }
-
 }
 
 /* Button implementation */
