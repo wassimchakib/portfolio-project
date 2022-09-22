@@ -10,14 +10,6 @@ body {
   background-color: #e5e5e5;
 }
 
-#intro {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
 /* header */
 #header {
   display: flex;
@@ -28,6 +20,7 @@ body {
   right: 0;
   width: 80%;
   margin: 0 auto;
+
 }
 
 #headline a {
@@ -42,6 +35,8 @@ body {
   font-size: 18px;
   text-decoration: none;
   color: #6070ff;
+  padding: 10px 12px;
+  margin: 0 8px;
 }
 
 #headline ul {
@@ -71,7 +66,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom-left-radius: 150px;
+  border-bottom-left-radius: 100px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -79,6 +74,8 @@ body {
   align-items: center;
   gap: 10px;
   background-color: #fff;
+  width: 100%;
+  height: 100vh;
 }
 
 .content-padding {
@@ -129,6 +126,95 @@ body {
   #headline p {
     font-size: 16px;
   }
+
+  #header {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+
+  }
+
+  /* Works section */
+  #works {
+    display: grid;
+    grid-template-columns: 24px 1fr 24px;
+    row-gap: 88px;
+    margin: 88px 0;
+  }
+
+  .card {
+    grid-column: 2;
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+  }
+
+  .card img {
+    border-radius: 8px;
+    margin: 16px;
+  }
+
+  .left-block {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 16px;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+
+  .left-block h1 {
+    font-size: 32px;
+    color: #172b4d;
+    line-height: 44px;
+  }
+
+  .left-block p {
+    font-weight: 400;
+    font-size: 15px;
+    color:#344563;
+  }
+  .info{
+    display: flex;
+    align-items: center;
+  }
+
+  .info h3{
+    font-size:13px;
+    line-height: 16px;
+  }
+
+  .title{
+    color:#344563;
+  }
+
+  .description{
+    color:#7a869a;
+  }
+
+  .categories{
+    display: flex;
+    list-style-type: none;
+    gap: 8px;
+    padding: 0;
+  }
+
+  .tag{
+    padding: 4px 12px;
+    background-color: #ebebff;
+    border-radius: 8px;
+    color:#6070ff;
+    font-size: 12px;
+  }
+
+  .btn{
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-size: 17px;
+  }
+  
 }
 
 /* Button implementation */
