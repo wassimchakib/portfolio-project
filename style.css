@@ -199,7 +199,6 @@ body {
   }
 
   .categories {
-    display: flex;
     list-style-type: none;
     gap: 8px;
     padding: 0;
@@ -211,6 +210,8 @@ body {
     border-radius: 8px;
     color: #6070ff;
     font-size: 12px;
+    float:left;
+    margin-right:5px;
   }
 
   .btn {
