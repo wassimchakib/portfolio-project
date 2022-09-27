@@ -210,8 +210,8 @@ body {
     border-radius: 8px;
     color: #6070ff;
     font-size: 12px;
-    float:left;
-    margin-right:5px;
+    float: left;
+    margin-right: 5px;
   }
 
   .btn {
@@ -296,7 +296,6 @@ body {
     background-size: 100%;
     background-color: #6070ff;
     border-top-left-radius: 100px;
-    
   }
 
   #contact-form h1 {
@@ -323,7 +322,8 @@ body {
     gap: 20px;
   }
 
-  .form-container input[type=text] , .form-container input[type=email]{
+  .form-container input[type=text],
+  .form-container input[type=email] {
     border: 1px solid #cfd8dc;
     border-radius: 8px;
     font-weight: 400;
@@ -334,17 +334,20 @@ body {
     height: 48px;
   }
 
-  .form-container textarea{
+  .form-container textarea {
     padding: 15px 38px 15px 16px;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
     height: 170px;
     resize: none;
     font-size: 15px;
+  }
+
+  ::placeholder {
     color: #b3bac5;
   }
 
-  .submit-btn{
+  .submit-btn {
     color: #6070ff;
     margin-bottom: 45px;
   }
@@ -374,7 +377,7 @@ body {
   color: #5e6c84;
 }
 
-footer{
+footer {
   background-color: #fff;
   width: 100%;
 }
