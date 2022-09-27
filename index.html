@@ -55,7 +55,7 @@
                     <li class="tag">javascript</li>
                 </ul>
                 <div>
-                    <button class="btn">See Project</button>
+                    <button type="button" class="btn">See Project</button>
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@
                     <li class="tag">javascript</li>
                 </ul>
                 <div>
-                    <button class="btn">See Project</button>
+                    <button type="button" class="btn">See Project</button>
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@
                     <li class="tag">javascript</li>
                 </ul>
                 <div>
-                    <button class="btn">See Project</button>
+                    <button type="button" class="btn">See Project</button>
                 </div>
             </div>
 
@@ -125,7 +125,7 @@
                     <li class="tag">javascript</li>
                 </ul>
                 <div>
-                    <button class="btn">See Project</button>
+                    <button type="button" class="btn">See Project</button>
                 </div>
             </div>
         </div>
@@ -146,12 +146,12 @@
             <li><a href="#"><img src="images/angellist.svg" alt="angelist"></a></li>
         </ul>
         <div id="resume">
-            <button class="btn">Get my resume</button>
+            <button type="button" class="btn">Get my resume</button>
         </div>
         <div class="skill-set">
             <div id="language">
                 <h3>Languages</h3>
-                <img src="images/down-arrow.png"/>
+                <img src="images/down-arrow.png" />
             </div>
 
             <ul id="language-list">
@@ -168,18 +168,36 @@
                     <h3>CSS</h3>
                 </li>
             </ul>
-    
+
             <div id="language" class="border-bot">
                 <h3>Frameworks</h3>
-                <img src="images/right-arrow.png"/>
+                <img src="images/right-arrow.png" />
             </div>
             <div id="language" class="border-bot">
                 <h3>Skills</h3>
-                <img src="images/right-arrow.png"/>
+                <img src="images/right-arrow.png" />
             </div>
         </div>
-        
+
     </section>
+
+    <footer>
+        <div id="contact-form">
+            <h1>Contact me</h1>
+            <p>If you have an application you are interested in developing, a feature that you need built or a project
+                that
+                needs coding. I’d love to help with it </p>
+            <form action="https://formspree.io/f/xoqbdrjg" method="post" class="form-container">
+                <input type="text" name="fullname" maxlength="30" placeholder="Enter your fullname" required/>
+                <input type="email" name="email" placeholder="Enter your email" required/>
+                <textarea placeholder="Write your message here" name="message" maxlength="500" required></textarea>
+                <div class="submit-btn">
+                    <button class="btn">Get It Touch</button>
+                </div>
+            </form>
+        </div>
+
+    </footer>
 </body>
 
 </html>
