@@ -293,7 +293,8 @@ body {
   #contact-form {
     background-image: url(/images/contact-form.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 60% 90%;
+    background-position: top right;
     background-color: #6070ff;
     border-top-left-radius: 100px;
   }
