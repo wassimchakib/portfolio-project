@@ -48,18 +48,16 @@ body {
 }
 
 #logo {
-  animation: rotatetext 3s alternate-reverse; /* change*/
+  animation: rotatetext 2s;
 }
 
 @keyframes rotatetext {
   0%{
     transform: rotate(0deg);
   }
-  50% {
-    transform: rotate(90deg);
-  }
+  
   100% {
-    transform: rotate(0deg);
+    transform: rotate(-360deg);
   }
 }
 
