@@ -52,10 +52,10 @@ body {
 }
 
 @keyframes rotatetext {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  
+
   100% {
     transform: rotate(-360deg);
   }
@@ -356,10 +356,6 @@ footer {
   height: 48px;
 }
 
-.form-container input:hover, .form-container textarea:hover {
-  transform: translateX(20px);
-}
-
 .form-container textarea {
   padding: 15px 38px 15px 16px;
   border: 1px solid #cfd8dc;
@@ -367,6 +363,11 @@ footer {
   height: 170px;
   resize: none;
   font-size: 15px;
+}
+
+.form-container input:hover,
+.form-container textarea:hover {
+  transform: translateX(20px);
 }
 
 ::placeholder {
@@ -430,12 +431,11 @@ footer {
     align-self: center;
     width: 100%;
     min-width: 50%;
-
   }
 
   .card img.snapshot:hover {
     transform: scale(1.1);
-  } 
+  }
 
   .card .right {
     order: -1;
