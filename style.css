@@ -47,6 +47,22 @@ body {
   margin: 0 8px;
 }
 
+#logo {
+  animation: rotatetext 3s alternate-reverse; /* change*/
+}
+
+@keyframes rotatetext {
+  0%{
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .presentation ul {
   display: flex;
   gap: 20px;
@@ -187,6 +203,10 @@ body {
   float: left;
 }
 
+.categories .tag:hover {
+  transform: scale(1.2);
+}
+
 /* Button implementation */
 .btn {
   padding: 12px;
@@ -196,6 +216,7 @@ body {
   border-radius: 8px;
   font-size: 17px;
   cursor: pointer;
+  transition: ease-in-out 1s;
 }
 
 .btn:hover {
@@ -271,6 +292,10 @@ body {
   height: 67px;
 }
 
+.skill-detail li:hover {
+  transform: scale(1.2);
+}
+
 .skill-detail li img {
   padding: 12px;
 }
@@ -331,6 +356,10 @@ footer {
   color: #172b4d;
   padding: 15px 38px 15px 16px;
   height: 48px;
+}
+
+.form-container input:hover, .form-container textarea:hover {
+  transform: translateX(20px);
 }
 
 .form-container textarea {
@@ -403,7 +432,12 @@ footer {
     align-self: center;
     width: 100%;
     min-width: 50%;
+
   }
+
+  .card img.snapshot:hover {
+    transform: scale(1.1);
+  } 
 
   .card .right {
     order: -1;
