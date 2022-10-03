@@ -9,6 +9,9 @@
 
 - HTML5, CSS3
 
+## Live Demo (if available)
+
+[Live Demo Link](https://wassimchakib.github.io/portfolio-project/)
 
 ## Getting Started
 
