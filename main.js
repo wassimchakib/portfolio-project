@@ -1,56 +1,53 @@
 const projects = [
   {
-    id: "0",
-    title: "Hein",
-    tags: ["Canopy", "Back End dev", "2015"],
-    imgsrc: "images/project1.png",
+    id: '0',
+    title: 'Hein',
+    tags: ['Canopy', 'Back End dev', '2015'],
+    imgsrc: 'images/project1.png',
     description: {
-      small: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-      big: "A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required."
+      small: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      big: 'A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.',
     },
-    technologies: ["HTML", "CSS", "Ruby on Rails"],
-    links: ["https://github.com", "https://heroku.com"],
+    technologies: ['HTML', 'CSS', 'Ruby on Rails'],
+    links: ['https://github.com', 'https://heroku.com'],
   },
   {
-    id: "1",
-    title: "Multi-Post Stories",
-    tags: ["FACEBOOK", "Full Stack Dev", "2015"],
-    imgsrc: "images/project2.png",
+    id: '1',
+    title: 'Multi-Post Stories',
+    tags: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    imgsrc: 'images/project2.png',
     description: {
-      small: "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
-      big: "A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required."
+      small: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+      big: 'A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.',
     },
-    technologies: ["HTML", "CSS", "JavaScript"],
-    links: ["https://github.com", "https://heroku.com"],
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    links: ['https://github.com', 'https://heroku.com'],
   },
   {
-    id: "2",
-    title: "Tonic",
-    tags: ["Canopy", "Back End dev", "2015"],
-    imgsrc: "images/project3.png",
+    id: '2',
+    title: 'Tonic',
+    tags: ['Canopy', 'Back End dev', '2015'],
+    imgsrc: 'images/project3.png',
     description: {
-      small: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-      big: "A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required."
+      small: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      big: 'A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.',
     },
-    technologies: ["HTML", "CSS", "Ruby on Rails"],
-    links: ["https://github.com", "https://heroku.com"],
+    technologies: ['HTML', 'CSS', 'Ruby on Rails'],
+    links: ['https://github.com', 'https://heroku.com'],
   },
   {
-    id: "3",
-    title: "Tonic",
-    tags: ["Canopy", "Back End dev", "2015"],
-    imgsrc: "images/project4.png",
+    id: '3',
+    title: 'Tonic',
+    tags: ['Canopy', 'Back End dev', '2015'],
+    imgsrc: 'images/project4.png',
     description: {
-      small: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-      big: "A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required."
+      small: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      big: 'A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.',
     },
-    technologies: ["HTML", "CSS", "Ruby on Rails"],
-    links: ["https://github.com", "https://heroku.com"],
-  }
+    technologies: ['HTML', 'CSS', 'Ruby on Rails'],
+    links: ['https://github.com', 'https://heroku.com'],
+  },
 ];
-
-
-
 
 const navbarHamburger = document.querySelector('#navbar-hamburger');
 const mobileMenu = document.querySelector('#mobile-menu');
@@ -73,15 +70,14 @@ document.querySelectorAll('.nav-link').forEach(
 
 let listOfelements = '';
 let listProject = '';
-projects.forEach((project)=>{
-  listOfelements='';
+projects.forEach((project, i) => {
+  listOfelements = '';
   project.technologies.forEach((technologie) => {
     listOfelements += `<li class="tag">${technologie}</li>`;
-    console.log(listOfelements)
-  })
+  });
   listProject += `<div class="card">
   <img class="snapshot" src="${project.imgsrc}" alt="" />
-  <div class="left-block right">
+  <div class="left-block ${i % 2 !== 0 ? 'right' : ''}">
       <h1>${project.title}</h1>
       <ul class="info">
           <li class="title">${project.tags[0]}</li>
@@ -98,23 +94,22 @@ projects.forEach((project)=>{
           <button type="button" class="btn card-btn">See Project</button>
       </div>
   </div>
-  </div>`
-})
+  </div>`;
+});
 const workSection = document.querySelector('#works');
-workSection.innerHTML += `${listProject}`
+workSection.innerHTML += `${listProject}`;
 const divPopup = document.createElement('div');
 
 const cardBtns = document.querySelectorAll('.card-btn');
-cardBtns.forEach((cardBtn,i)=>{
-   cardBtn.addEventListener('click',()=>{
-    divPopup.style.display = "flex";
+cardBtns.forEach((cardBtn, i) => {
+  cardBtn.addEventListener('click', () => {
+    divPopup.style.display = 'flex';
     divPopup.classList.add('pop-up');
-    listOfelements='';
-  projects[i].technologies.forEach((technologie) => {
-    listOfelements += `<li class="tag">${technologie}</li>`;
-    console.log(listOfelements)
-  })
-    let popupText =`
+    listOfelements = '';
+    projects[i].technologies.forEach((technologie) => {
+      listOfelements += `<li class="tag">${technologie}</li>`;
+    });
+    const popupText = `
     <div class="pop-up-content">
         <div class="left-block ">
             <div class="pop-up-title">
@@ -150,16 +145,14 @@ cardBtns.forEach((cardBtn,i)=>{
 
             </div>
         </div>
-    </div>`
+    </div>`;
 
-divPopup.innerHTML += popupText;
-workSection.appendChild(divPopup);
-const closePopup =document.querySelector('.close-popup');
-closePopup.addEventListener('click',()=>{
-  divPopup.style.display = "none";
-  divPopup.innerHTML = "";
-})
-   })
-})
-
-
+    divPopup.innerHTML += popupText;
+    workSection.appendChild(divPopup);
+    const closePopup = document.querySelector('.close-popup');
+    closePopup.addEventListener('click', () => {
+      divPopup.style.display = 'none';
+      divPopup.innerHTML = '';
+    });
+  });
+});
