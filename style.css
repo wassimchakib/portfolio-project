@@ -181,7 +181,7 @@ body {
   width: 100%;
   height: 80vh;
   background-color: #fff;
-  padding: 4.6%;
+  padding: 24px;
   overflow-y: scroll;
   border-radius: 25px;
 }
@@ -208,6 +208,22 @@ body {
 .pop-up-title img {
   height: 100%;
   object-fit: cover;
+}
+
+.pop-up-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pop-up-technologies {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pop-up-technologies hr {
+  border: 1px solid #ebecf0
 }
 
 .pop-up-btns {
@@ -498,6 +514,24 @@ footer {
 
   #navbar .mobile {
     display: none;
+  }
+
+  /* popup section */
+
+  .pop-up-description {
+    flex-direction: row;
+  }
+
+  .pop-up-description div:first-child {
+    width: 70%;
+  }
+
+  .pop-up-technologies {
+    width: 30%;
+  }
+
+  .categories {
+    flex-wrap: wrap;
   }
 
   .presentation {
