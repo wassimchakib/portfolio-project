@@ -175,6 +175,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 4.2%;
+  display: none;
 }
 
 .pop-up-content {
@@ -229,6 +230,10 @@ body {
 .pop-up-btns {
   display: flex;
   justify-content: space-between;
+}
+
+.pop-up-btns a {
+  text-decoration: none;
 }
 
 .pop-up-btns button {
