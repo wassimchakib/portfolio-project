@@ -53,6 +53,10 @@ body {
   gap: 40px;
 }
 
+.pop-up-btns a {
+  text-decoration: none;
+}
+
 .mobile-menu ul li a {
   text-decoration: none;
   color: #fff;
@@ -113,7 +117,7 @@ body {
   top: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(96, 112, 255, 0.8);
+  background-color: rgb(96, 112, 255);
   backdrop-filter: blur(10px);
   display: none;
 }
@@ -162,6 +166,79 @@ body {
 }
 
 /* Works section */
+.pop-up {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(193, 199, 208, 0.5);
+  backdrop-filter: blur(5px);
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 4.2%;
+  display: none;
+}
+
+.pop-up-content {
+  width: 100%;
+  height: 80vh;
+  background-color: #fff;
+  padding: 24px;
+  overflow-y: scroll;
+  border-radius: 25px;
+}
+
+.pop-up-content div {
+  padding-right: 0;
+}
+
+.pop-up-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pop-up-title h2 {
+  width: 80%;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.pop-up-title img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.pop-up-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pop-up-technologies {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pop-up-technologies hr {
+  border: 1px solid #ebecf0;
+}
+
+.pop-up-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pop-up-btns button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 
 #works {
   display: grid;
@@ -439,6 +516,24 @@ footer {
 
   #navbar .mobile {
     display: none;
+  }
+
+  /* popup section */
+
+  .pop-up-description {
+    flex-direction: row;
+  }
+
+  .pop-up-description div:first-child {
+    width: 70%;
+  }
+
+  .pop-up-technologies {
+    width: 30%;
+  }
+
+  .categories {
+    flex-wrap: wrap;
   }
 
   .presentation {
