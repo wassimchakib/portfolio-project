@@ -485,8 +485,8 @@ footer {
   font-size: 15px;
 }
 
-.form-container input:hover,
-.form-container textarea:hover {
+.form-container input:focus,
+.form-container textarea:focus {
   transform: translateX(20px);
 }
 
@@ -499,19 +499,22 @@ footer {
   margin-bottom: 45px;
 }
 
-.email-invalid {
+.email-invalid,
+.error-message {
   color: #fff;
   background-color: red;
   border-radius: 10px;
-  align-items: center;
   padding: 10px;
   display: none;
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
 }
 
 .email-invalid::before {
   content: url("images/danger.png");
   position: relative;
   padding-right: 16px;
+  top: 2px;
 }
 
 /* Desktop version */
