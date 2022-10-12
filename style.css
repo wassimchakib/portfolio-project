@@ -499,6 +499,22 @@ footer {
   margin-bottom: 45px;
 }
 
+.email-invalid {
+  color:#fff;
+  background-color: red;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  display: none;
+}
+
+.email-invalid::before {
+  content: url("images/danger.png");
+  position: relative;
+  padding-right: 16px;
+}
+
 /* Desktop version */
 
 @media all and (min-width: 768px) {
