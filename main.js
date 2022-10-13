@@ -192,20 +192,24 @@ form.addEventListener('submit', (event) => {
 });
 
 // LocalStorage
-let elements = form.elements;
-let localObj = {};
+const { elements } = form;
+const localObj = {};
 
-for(let i=0; i< elements.length; i++){
+for (let i = 0; i < elements.length; i += 1) {
   elements[i].addEventListener('change', () => {
-    localObj[elements[i].name]=elements[i].value;
-    console.log(localObj)
-    localStorage.setItem("formData", JSON.stringify(localObj));
-  })
+    localObj[elements[i].name] = elements[i].value;
+    localStorage.setItem('formData', JSON.stringify(localObj));
+  });
 }
 
-let localData = JSON.parse(localStorage.getItem("formData"));
-if(localData !== null){
-  for(let i=0; i< elements.length; i++){
+const localData = JSON.parse(localStorage.getItem('formData'));
+if (localData !== null) {
+  for (let i = 0; i < elements.length; i += 1) {
     elements[i].value = localData[elements[i].name];
   }
 }
+
+const resetBtn = document.querySelector('#reset-btn');
+resetBtn.addEventListener('click', () => {
+  localStorage.removeItem('formData');
+});
