@@ -195,18 +195,19 @@ form.addEventListener('submit', (event) => {
 const { elements } = form;
 const localObj = {};
 
-for (let i = 0; i < elements.length; i += 1) {
-  elements[i].addEventListener('change', () => {
+const localData = JSON.parse(localStorage.getItem('formData'));
+if (localData !== null) {
+  for (let i = 0; i < elements.length - 2; i += 1) {
+    elements[i].value = localData[elements[i].name];
+    localObj[elements[i].name] = elements[i].value;
+  }
+}
+
+for (let i = 0; i < elements.length - 2; i += 1) {
+  elements[i].addEventListener('input', () => {
     localObj[elements[i].name] = elements[i].value;
     localStorage.setItem('formData', JSON.stringify(localObj));
   });
-}
-
-const localData = JSON.parse(localStorage.getItem('formData'));
-if (localData !== null) {
-  for (let i = 0; i < elements.length; i += 1) {
-    elements[i].value = localData[elements[i].name];
-  }
 }
 
 const resetBtn = document.querySelector('#reset-btn');
