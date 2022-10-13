@@ -190,3 +190,12 @@ form.addEventListener('submit', (event) => {
     });
   }
 });
+
+// LocalStorage
+let elements = form.elements;
+let localObj = {};
+for(let i=0; i< elements.length; i++){
+  elements[i].addEventListener('change', () => {
+    localStorage.setItem(elements[i].name, elements[i].value);
+  })
+}
