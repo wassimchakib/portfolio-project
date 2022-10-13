@@ -194,8 +194,18 @@ form.addEventListener('submit', (event) => {
 // LocalStorage
 let elements = form.elements;
 let localObj = {};
+
 for(let i=0; i< elements.length; i++){
   elements[i].addEventListener('change', () => {
-    localStorage.setItem(elements[i].name, elements[i].value);
+    localObj[elements[i].name]=elements[i].value;
+    console.log(localObj)
+    localStorage.setItem("formData", JSON.stringify(localObj));
   })
+}
+
+let localData = JSON.parse(localStorage.getItem("formData"));
+if(localData !== null){
+  for(let i=0; i< elements.length; i++){
+    elements[i].value = localData[elements[i].name];
+  }
 }
