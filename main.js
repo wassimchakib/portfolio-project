@@ -1,15 +1,15 @@
 const projects = [
   {
     id: '0',
-    title: 'Hein',
-    tags: ['Canopy', 'Back End dev', '2015'],
-    imgsrc: 'images/project1.png',
+    title: 'ToDo List',
+    tags: ['ToDo list', 'Front End dev', '2022'],
+    imgsrc: 'images/home_page.png',
     description: {
-      small: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      big: 'A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      small: 'A project of selecting daily ToDO.',
+      big: 'In this project, you can add tasks for today and delete / erase them once they are finished',
     },
-    technologies: ['HTML', 'CSS', 'Ruby on Rails'],
-    links: ['https://github.com', 'https://heroku.com'],
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    links: ['https://wassimchakib.github.io/ToDo-list/dist/index.html', 'https://github.com/wassimchakib/ToDo-list'],
   },
   {
     id: '1',

@@ -262,6 +262,7 @@ body {
 .card img.snapshot {
   border-radius: 8px;
   align-self: center;
+  max-width: 100%;
 }
 
 .left-block {
